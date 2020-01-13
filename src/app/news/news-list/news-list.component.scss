@@ -1,0 +1,19 @@
+.topics-wrapper{
+    border: 2px solid black;
+}
+
+a, p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.topic{
+    cursor: pointer;
+}
+
+.title{
+    font-weight: bold;
+    color: steelblue;
+    font-size: x-large;
+    font-family: cursive;
+}

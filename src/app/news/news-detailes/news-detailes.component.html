@@ -1,0 +1,54 @@
+<!-- <p>news-detailes works!</p>
+<div *ngIf="new">
+    <h4>Post</h4>
+    <h2>{{new.title}}</h2>
+    <div>
+      <div>
+        <div>
+          <div *ngIf="new.urlToImage">
+            <i class="fa fa-window-close drop-img" (click)="dropImg()"></i>
+            <img [src]="new.urlToImage">
+          </div>
+          <div>
+            <a href="https://newsapi.org/">NEWS.com.au</a>
+          </div>
+        </div>
+  
+        <div>
+          <p>{{new.title}}</p>
+          <p [innerHTML]="new.content"></p>
+          <p [innerHTML]="new.description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="float-right">
+      <a [href]="new.url">Read more >></a>
+    </div>
+  </div> -->
+
+
+  <div *ngIf="new">
+    <h4 class="title">Article Detailes</h4>
+    <h3>{{new.title}}</h3>
+    <div class="details-wrapper">
+      <div class="row">
+        <div class="text-center">
+          <div class="" *ngIf="new.urlToImage">
+            <i class="remove-img" (click)="removeImg()"></i>
+            <img class="" [src]="new.urlToImage">
+          </div>
+          <div >
+            <a href="https://newsapi.org/">NEWS.com.au</a>
+          </div>
+        </div>
+        <div class="">
+          <p class="topic">{{new.title}}</p>
+          <p [innerHTML]="new.content">{{new.title}}</p>
+          <p [innerHTML]="new.description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <a [href]="new.url">Read more >></a>
+    </div>
+  </div>

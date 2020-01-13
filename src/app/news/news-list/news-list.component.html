@@ -1,0 +1,8 @@
+<div>
+    <h4 class="title"> Titles </h4>
+    <div class="topics-wrapper">
+      <div  class="" *ngFor="let new of news; let i=index">
+        <p (click)="viewDetailsNew(i)">{{new.title}}</p>
+      </div>
+    </div>
+  </div>

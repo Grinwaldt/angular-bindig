@@ -1,0 +1,12 @@
+<div>
+    <h4 class="title-header">Google news</h4>
+    <div  class="row ">
+      <div class="cont-list">
+        <app-news-list (newIndex)="chooseNew($event)" [news]="news"></app-news-list>
+      </div>
+  
+      <div class="cont-details" *ngIf="newIndex!=null" >
+        <app-news-detailes [new]="news[newIndex]"></app-news-detailes>
+      </div>
+    </div>
+  </div>
